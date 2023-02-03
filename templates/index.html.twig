@@ -1,0 +1,22 @@
+{% extends "base.html.twig" %}
+{% block title %}
+    Movie Page
+{% endblock %}
+{% block body %}
+    {# <h1>{{title}}</h1>
+
+    {% if title %}
+        <h1>{{title}} is a movie</h1>
+    {% else %}
+        <h1>there is not have a movie</h1>
+    {% endif %} #}
+
+    {% for movie in movies %}
+        <li>{# movie #}</li>
+        {# <li>{{movie}}</li> #}
+        {# ten blade hien tai va charset  #}
+                {# {{_self}} #} 
+                {# {{_charset}} #}
+                {{author}}
+    {% endfor %}
+{% endblock %}
